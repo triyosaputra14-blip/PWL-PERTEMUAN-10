@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Redirect semua permintaan ke dalam susunan folder public/ Laravel
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
